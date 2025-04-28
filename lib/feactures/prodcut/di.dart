@@ -12,10 +12,15 @@ class Di extends Bindings {
       fenix: true,
     );
 
+
     Get.lazyPut<ProductoRepository>(
       () => ProductoRepositoryImpl(productoDataSource: Get.find()),
       fenix: true,
     );
+
+
+
+
 
     Get.lazyPut<ProductoDataSource>(
           () => ProductoDataSourceDio(),
